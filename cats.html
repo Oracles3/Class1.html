@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PET FOOD STORE</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" async></script>
+
+</head>
+<body>
+<div class="announcement-bar">
+    <p class="announcement-bar_message">Get FREE Delivery on all purchases over $300</p>
+</div>
+
+<!-- Nav link -->
+<div class="container">
+    <div class="nav-wrapper">
+        <div class="left">
+            <div class="nav-link">
+                <a href="index.html">Home</a>
+            </div>
+
+            <div class="nav-link">
+                <a href="dogs.html">Dogs</a>
+            </div>
+
+            <div class="nav-link">
+                <a href="birds.html">Birds</a>
+            </div>
+
+            <div class="nav-link">
+                <a href="rabbits.html">Rabbits</a>
+            </div>
+
+            <div class="nav-link active-nav-link">
+                <a href="cats.html">Cats</a>
+            </div>
+
+            <div class="nav-link">
+                <a href="cart.html">Cart</a>
+            </div>
+        </div>
+
+        <!-- Brand Logo with the shops name -->
+        <div class="right">
+            <div class="brand">
+                <img class="Logo" src="Images/Pictures/logo.png" alt="Logo">
+                <div>PET FOOD STORE</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<<!-- Cat product coding -->
+<div id = "middle">
+    <div class="product">
+        <p><img src="Images/Pictures/cat food1.png" alt="Cat Food"></p>
+        <p>Price: $2</p>
+        <p>
+            <label for="HillsQty"></label><input placeholder="qty" type="number" id = "HillsQty">
+            <button id = "addHills" onclick="addProductToCart(this.id)">Add to cart</button>
+        </p>
+    </div>
+    <div class="product">
+        <p><img src="Images/Pictures/cat food2.png" alt="Cat Food"></p>
+        <p>Price: $3</p>
+        <p>
+            <label for="OneQty"></label><input placeholder="qty" type="number" id = "OneQty">
+            <button id = "addOne" onclick="addProductToCart(this.id)">Add to cart</button>
+        </p>
+    </div>
+    <div class="product">
+        <p><img src="Images/Pictures/cat food3.png" alt="Cat Food"></p>
+        <p>Price: $3</p>
+        <p>
+            <label for="OmegaQty"></label><input placeholder="qty" type="number" id = "OmegaQty">
+            <button id = "addOmega" onclick="addProductToCart(this.id)">Add to cart</button>
+        </p>
+    </div>
+
+</div>
+
+<!-- Cart Coding -->
+<div class="cart">
+    <div id="rightDiv">
+        <h2>Cart</h2>
+        <button id ="checkOut" onclick="invoice()">Check out</button>
+    </div>
+
+
+    <!-- The Invoice -->
+    <div id="myModal" class="modal">
+
+        <!-- Invoice content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id = "invoicePlace">Invoice</div>
+        </div>
+
+    </div>
+</div>
+
+<footer>
+    <p>Assessment 2</p>
+    <p>Unitec</p>
+    <p>Created by Stephan Teaca-Jucan</p>
+</footer>
+
+
+</body>
+</html>

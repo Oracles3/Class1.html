@@ -108,5 +108,51 @@ footer {
     background: #333333;
     color: white;
     padding: 2em;
-    margin-top: auto;
+    margin-bottom: auto;
 }
+
+/* Announcement bar Styles */
+.announcement-bar {
+    text-align: center;
+    position: relative;
+    z-index: 10;
+    background: crimson;
+    color: white;
+}
+
+.announcement-bar {
+    padding: 10px 20px;
+}
+
+.announcement-bar__message {
+    display: block;
+    font-size: 1em;
+    font-weight: 400;
+    padding: 10px 20px;
+}
+
+/* Product Style */
+.product{
+    display: inline-block;
+    width: 10%;
+    margin-left: 15%;
+}
+
+.product img{
+    width: 100%;
+    display: flex;
+}
+
+.product input{
+    width: 30px;
+}
+
+/* Cart Style */
+.cart{
+    display: inline-block;
+    width: 10%;
+    margin-left: 15%;
+}
+
+
+
